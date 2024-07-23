@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <title>Project-1 html , css , java script</title>
+    
+    <link rel="stylesheet" href="Marking.css">
+   
+    <script src="Marking.js"></script>
+
+
+</head>
+<body class="dark-mode">
+
+
+    <!-- page 1 of Home----------------------------------->
+    <header class="header">
+        <!--this is a logo -->
+        <div class="logo">
+            <a href="Marking.html"><img src="VintageLogo1.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+        <div id="searchResults"></div>
+        <!-- this is a theme mode -->
+        <div class="toggle-btn">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle-label">
+                <i class="fa-solid fa-sun" style="color: #ffffff;" id="sun"></i>
+                <span class="toggle-ball"></span>
+                <i class="fa-solid fa-moon" style="color: #ffffff;" id="moon"></i>
+            </label>
+        </div>
+        <!-- this is sign in -->
+        <div class="signup-login"><a href="Form.html"><i class="fa-solid fa-user" style="color: #ba5840;"></i></a></div>
+    </header>
+
+    
+    <div class="page1" id="home">
+        <div class="video-1">
+            <video id="video-calander" src="calander.mp4" autoplay loop muted ></video>
+        </div>
+    </div>
+
+
+
+    <!-- background of page 2 for information --> 
+    <div class="page-2" id="information">
+        <div class="containter-info">
+            <h1 id="">Information</h1>
+        </div>
+        <div class="data">
+            <div class="information-data">
+                <ul>
+                    <li>Step 1 : you have to sign in.</li>
+                    <li>Step 2 : Feel details of your choice</li>
+                    <li>Step 3 : Choose the date and time as per your choice</li>
+                    <li>Step 4 : Then write your goals</li>
+                    <li>Step 5 : tick mark on your golas afer completing</li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <img src="information.png" alt="">
+        </div>
+    </div>   
+<!-- page3 for about ---------------------------------------->
+    
+    <div class="page-3" id="about">
+        <div class="containter-about">
+            <h1 id="">About</h1>
+        </div>
+        <div class="title">
+            <h2>Title: Mastering Time: The Art of Effective Time Management</h2>
+        </div>
+        <div class="intro">
+            <h3>Introduction:
+                In the whirlwind of modern life, time has become one of our most precious commodities. Yet, it seems to slip through our fingers like sand, leaving us feeling overwhelmed and unaccomplished. Time management, therefore, emerges as an indispensable skill, allowing individuals to harness their time effectively, maximize productivity, and achieve their goals.</p>
+            </h3>
+        </div>    
+        <div class="principle">
+            <h4>
+                The Importance of Time Management:
+            Time management is not merely about scheduling tasks; it's about making conscious choices about how to allocate our time to activities that align with our priorities. In today's fast-paced world, where distractions abound, those who master time management gain a competitive edge. They are better equipped to meet deadlines, handle unexpected challenges, and maintain a healthy work-life balance.
+            
+            Key Principles of Time Management:
+            
+            Setting Clear Goals: Time management begins with clarity of purpose. Setting SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals provides a roadmap for prioritizing tasks and allocating time effectively.
+            Prioritization: Not all tasks are created equal. Effective time managers distinguish between urgent and important tasks, focusing their energy on activities that contribute most to their long-term objectives.
+            Creating a Schedule: A well-structured schedule serves as a blueprint for the day, helping individuals stay organized and on track. It should include designated time slots for work, breaks, and leisure activities.
+            Minimizing Distractions: In today's hyper-connected world, distractions lurk at every corner. Time management involves identifying and minimizing these distractions, whether it be through setting boundaries with technology or creating a conducive work environment.
+            Utilizing Time Blocks: Chunking tasks into manageable time blocks enhances focus and productivity. The Pomodoro Technique, for instance, advocates working in 25-minute intervals followed by short breaks, maximizing efficiency while preventing burnout.
+            Flexibility: While structure is essential, rigid adherence to a schedule can backfire. Effective time managers remain adaptable, adjusting their plans in response to unforeseen circumstances or changing priorities.
+            Benefits of Effective Time Management:
+            
+            </h4>
+        </div>
+        <div class="more">
+            <h4>
+                Increased Productivity: By eliminating time-wasting activities and focusing on high-priority tasks, individuals can accomplish more in less time.
+Reduced Stress: Time management empowers individuals to take control of their workload, alleviating feelings of overwhelm and anxiety.
+Improved Work-Life Balance: By optimizing their time, individuals can devote adequate attention to both professional and personal pursuits, leading to greater satisfaction and fulfillment.
+Enhanced Opportunities: Effective time management fosters a reputation for reliability and efficiency, opening doors to new opportunities and career advancement.
+Personal Growth: Time management is not just about managing tasks; it's about managing oneself. Through disciplined time management, individuals cultivate self-discipline, resilience, and self-mastery.
+Conclusion:
+In a world where time is both finite and fleeting, mastering the art of time management is no longer a luxury but a necessity. By adhering to key principles such as goal-setting, prioritization, and flexibility, individuals can unlock their full potential, achieving greater productivity, fulfillment, and success in all facets of life.
+     
+            </h4>
+        </div>
+    </div>
+    
+    
+    
+    <!-- page4 for contact ----------------------------------->
+    
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate programe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">oeder status</a></li>
+                        <li><a href="#">payment option</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

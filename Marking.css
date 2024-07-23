@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'poppins', sans-serif;
+    color: var(--secondary-color);
+}
+
+/* dark mode color*/
+:root .darkmode {
+    --primary-color: black;
+    /* --primary-color:#800080; */
+    /* --primary-color:#090979; */
+
+    --secondary-color: whitesmoke;
+}
+
+/* light theme color */
+:root {
+    /* --primary-color:black; */
+    --primary-color: #800000;
+    /* --primary-color:#800080; */
+    /* --primary-color:#090979; */
+
+    --secondary-color: whitesmoke;
+}
+
+/* page 1 */
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    /* color: var(--secondary-color); */
+    background-color: var(--primary-color);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+}
+
+.logo img {
+    height: 5rem;
+    width: auto;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.navbar ul li a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.navbar ul li a::before {
+    height: 2px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    background-color: red;
+    transition: .5s;
+}
+
+.navbar ul li a:hover::before {
+    width: 100%;
+}
+
+.search-container {
+    margin: 20px;
+    background-color: var(--primary-color);
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+/* page1 content */
+
+
+.page1 {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+
+/* this is the dark theme and light theme */
+.toggle-btn {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label {
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+    background-color: red;
+}
+
+#moon {
+    margin-left: .7rem;
+    margin-top: .5rem;
+}
+
+#sun {
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.toggle-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: inline-block;
+    position: absolute;
+    left: .3rem;
+    top: .2rem;
+    transition: all .2s linear;
+}
+
+#checkbox {
+    visibility: hidden;
+}
+
+#checkbox:checked+.toggle-label .toggle-ball {
+    background-color: var(--primary-color);
+    transform: translatex(1.8rem);
+}
+
+i {
+    position: relative;
+    z-index: 999;
+}
+
+/* this is a login and signin   */
+.signup-login {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
+    background-color: var(--secondary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-login :hover {
+    font-size: larger;
+    transition: .2s;
+}
+
+/* background video */
+.video-1 {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+#video-calander {
+    z-index: 0;
+    height: 115vh;
+    width: auto;
+    padding: 0;
+}
+
+/* page 2 content----------------------------------------------- */
+.page-2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.containter-info {
+    height: 10rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.page-2 .data {
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.page-2 .line {
+    height: 60vh;
+    width: .2vw;
+    background-color: var(--secondary-color);
+}
+
+.page-2 .data img {
+    height: 600px;
+    width: auto;
+    position: relative;
+}
+
+.page-2 .data .information-data ul li {
+    font-size: 30px;
+    margin: 3rem;
+
+}
+
+.page-2 .data .information-data ul li:hover {
+    text-decoration: underline;
+    transition: all 1s linear;
+}
+
+
+
+/* page-3 content------------------------------------------------ */
+.page-3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: justify;
+}
+
+#abt {
+    position: relative;
+    top: 10rem;
+}
+
+.page-3 .containter-about {
+    height: 10rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.page-3 .title {
+    height: 5rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.page-3 .intro {
+    height: 5rem;
+    width: 80vw;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.page-3 .principle {
+    height: 15rem;
+    width: 80vw;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.page-3 .more {
+    height: 10rem;
+    width: 80vw;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+/* page 4-footer-contact----------------------------------------- */
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container {
+    font-family: 'poppins', sans-serif;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 30%;
+    padding: 0 50px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, .2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+i:hover {
+    color: blueviolet;
+}

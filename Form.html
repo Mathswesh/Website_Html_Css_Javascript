@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Form.css">
+    <link rel="stylesheet" href="Marking.css">
+
+    <script src="Form.js"></script>
+</head>
+<body>
+    <header class="header" >
+        <!-- this is a logo -->
+        <div class="logo">
+            <a href="Marking.html"><img src="VintageLogo1.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Marking.html">Home</a></li>
+                <li><a href="Marking.html#information">Information</a></li>
+                <li><a href="Marking.html#about">About</a></li>
+                <li><a href="Marking.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- this is a theme mode -->
+        <div class="toggle-btn">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle-label">
+                <i class="fa-solid fa-sun" style="color: #ffffff;" id="sun"></i>
+                <span class="toggle-ball"></span>
+                <i class="fa-solid fa-moon" style="color: #ffffff;" id="moon"></i>
+            </label>
+        </div>
+        <!-- this is sign in -->
+        <div class="signup-login"><a href="Form.html"><i class="fa-solid fa-user" style="color: #ba5840;"></i></a></div>
+    </header>
+
+    <!-- form -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
