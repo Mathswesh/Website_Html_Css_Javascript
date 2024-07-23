@@ -5,11 +5,11 @@ const toggle = document.querySelector('#checkbox')
         {
             if(toggle.checked) 
             {
-                document.body.classList.add('dark-mode')
+                document.body.classList.add('darkmode')
             }
             else 
             {
-                document.body.classList.remove('dark-mode')
+                document.body.classList.remove('darkmode')
             }
         }
     )
